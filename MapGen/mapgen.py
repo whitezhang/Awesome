@@ -103,10 +103,11 @@ def drawMap(edges):
 				corridorLen = [direction[i][0]*tmpLen, direction[i][1]*tmpLen]
 				# Check whether corridor is validate or not
 				corridorRange = [0]*4
+				widthLen = random.randint(1, 4)
 				if corridorLen[0] == 0:
-					corridorRange = [xx-1, xx+1, yy, yy+corridorLen[1]]
+					corridorRange = [xx-widthLen, xx+widthLen, yy, yy+corridorLen[1]]
 				elif corridorLen[1] == 0:
-					corridorRange = [xx, xx+corridorLen[0], yy-1, yy+1]
+					corridorRange = [xx, xx+corridorLen[0], yy-widthLen, yy+widthLen]
 				corridorRange = smoothRange(corridorRange)
 				drawCorridor(corridorRange)
 				print 'range', corridorRange
