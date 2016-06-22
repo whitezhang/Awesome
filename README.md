@@ -1,6 +1,6 @@
 # Awesome!
 
-RECORD THINGS THAT FUNNY
+RECORD THINGS THAT'S FUNNY
 
 ### Map Generator
 
